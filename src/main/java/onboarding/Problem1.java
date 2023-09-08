@@ -3,6 +3,8 @@ package onboarding;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 class Problem1 {
     public static int solution(List<Integer> pobi, List<Integer> crong) {
         int answer = Integer.MAX_VALUE;
@@ -94,6 +96,13 @@ class Problem1 {
             answer = -1;
         }
         return answer;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> pobi = List.of(97, 98);
+        List<Integer> crong = List.of(197, 198);
+        int result = 0;
+        assertThat(Problem1.solution(pobi, crong)).isEqualTo(result);
     }
 
 
