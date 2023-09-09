@@ -96,9 +96,7 @@ class Problem1 {
         // 크롱 왼쪽, 오른쪽 페이지 계산한 것 중 가장 큰 수
         crong_score = Math.max(crong_firstPage_max, crong_secondPage_max);
 
-        // 예외 사항, 페이지 번호가 1씩 차이 나지 않을 때
-
-        // 승자 정하기
+        // 승자 정하기 ( 예외 사항, 페이지 번호가 1씩 차이 나지 않을 때 )
         if (pobi.get(0) +1 != pobi.get(1) && crong.get(0) +1 != crong.get(1)) {
             if (pobi_score > crong_score) {
                 answer = 1;
