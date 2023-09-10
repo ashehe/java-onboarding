@@ -2,7 +2,6 @@ package onboarding;
 
 public class Problem2 {
     public static String solution(String cryptogram) {
-
         for (int j = 0; j < cryptogram.length() - 1; j++) {
             for (int i = 0; i < cryptogram.length() - 1; i++) {
                 if (cryptogram.charAt(i) == cryptogram.charAt(i + 1)) {
@@ -15,7 +14,6 @@ public class Problem2 {
                 }
             }
         }
-
         return cryptogram;
     }
 }
